@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.App {
+  text-align: center;
+}
+
+.section {
+  padding: 60px 20px;
+}
+
+/* About.js Style */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.about-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border: 2px solid black;
+}
+
+.about-right {
+  flex: 2;
+  text-align: left;
+  max-width: 600px;
+}
+
+/* Responsive: horizontal layout on larger screens */
+@media (min-width: 768px) {
+  .about-section {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+/* Header.js navbar style */
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: orange; /* Hover color */
+}

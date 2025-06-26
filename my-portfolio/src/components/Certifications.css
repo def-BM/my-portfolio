@@ -1,0 +1,64 @@
+.certifications-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.certifications-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.certifications-description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.cert-card {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  transition: box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+.cert-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cert-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.cert-provider {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.cert-year {
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.cert-link {
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.cert-link:hover {
+  text-decoration: underline;
+}

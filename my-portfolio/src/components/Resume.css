@@ -1,0 +1,85 @@
+.resume-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.resume-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.resume-contact {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.resume-section {
+  margin-bottom: 30px;
+}
+
+.resume-section h2 {
+  font-size: 22px;
+  color: #222;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.resume-section p {
+    text-align: justify;
+}
+
+.resume-item {
+  margin-bottom: 20px;
+}
+
+.resume-item h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.resume-date {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+.resume-item ul {
+  padding-left: 20px;
+  list-style: disc;
+  text-align: justify;
+}
+
+.resume-item li {
+  margin-bottom: 10px;
+}
+
+.download-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.download-button a {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.download-button a:hover {
+  background-color: #0056b3;
+}
