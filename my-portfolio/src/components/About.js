@@ -10,7 +10,7 @@ const About = () => {
       {/* Left: Image */}
       <div className="about-left">
         <img
-          src="/Photo.jpeg"   // Image path
+          src= {process.env.PUBLIC_URL + "/Photo.jpeg"}  // Image path
           alt="Profile"
           className="about-image"
         />

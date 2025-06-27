@@ -75,7 +75,7 @@ const Resume = () => {
         </section>
 
         <div className="download-button">
-          <a href="/MyResume.pdf" download>Download Resume (PDF)</a>
+          <a href = {process.env.PUBLIC_URL + "/MyResume.pdf"} download>Download Resume (PDF)</a>
         </div>
       </div>
     </div>

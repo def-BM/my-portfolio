@@ -3,7 +3,7 @@ import './Projects.css'
 
 const projectsData = [
   {
-    image: '/img1.jpeg',
+    image: process.env.PUBLIC_URL + "/img1.jpeg",
     title: 'Telecom Churn Prediction',
     description: `This project predicts whether a telecom customer is likely to churn based on their demographic and usage data. 
             Built using Python and machine learning, it features a user-friendly Streamlit GUI where users can input customer details and instantly see churn predictions. 
@@ -11,7 +11,7 @@ const projectsData = [
     link: 'https://github.com/def-BM/Telecom_churn_prediction.git',
   },
   {
-    image: '/img2.png',
+    image: process.env.PUBLIC_URL + "/img2.png",
     title: 'Event Space Booking System (Eventura)',
     description: `Eventura is a web-based platform for booking event spaces for weddings, parties, or any special occasion. It is a full-stack website with both frontend and backend components. MongoDB is used to store user data.
                 The platform includes two types of login: one for users and another for venue owners.
@@ -19,14 +19,14 @@ const projectsData = [
     link: 'https://github.com/def-BM/Event_Space_Booking-Eventura-.git',
   },
   {
-    image: '/img3.png',
+    image: process.env.PUBLIC_URL + "/img3.png",
     title: 'Loan Eligiblity Prediction',
     description: `Loan Eligibility Prediction is a Python-based project designed to predict a consumer’s eligibility for a loan based on their demographic details such as age, income, spending score, credit score, and more.
           I used Tkinter to create the GUI and MongoDB to store the data. This is a basic machine learning model developed by me and was my first Python project.`,
     link: 'https://github.com/def-BM/Loan_Eligiblity_Prediction-App.git',
   },
   {
-    image: '/img4.jpeg',
+    image: process.env.PUBLIC_URL + "/img4.jpeg",
     title: 'Gas Leakage Detection',
     description: `Gas Leakage Detection is a hardware and software-based project designed to detect gas leaks and send alerts via notifications. 
               The system uses an ESP32 microcontroller, MQ-2 gas sensor, buzzer, and LED as its main components.
@@ -36,7 +36,7 @@ const projectsData = [
     link: 'https://github.com/def-BM/gas_leakage_detection.git',
   },
   {
-    image: '/img5.png',
+    image: process.env.PUBLIC_URL + "/img5.png",
     title: 'Customer Segmentation Analysis using Power BI',
     description: `This project focuses on segmenting customers into distinct groups based on various attributes such as age, annual income, spending score, and other behavioral or demographic factors. Using Power BI, 
                   an interactive and visual dashboard was created to help businesses gain insights into customer behavior and purchasing patterns.`,

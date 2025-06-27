@@ -6,13 +6,13 @@ const certifications = [
     title: "Python Full Course - Complete Beginner to Advanced",
     provider: "GeeksforGeeks",
     year: "2025",
-    link: "/python_certificate.pdf",
+    link: process.env.PUBLIC_URL + "/python_certificate.pdf",
   },
   {
     title: "Mastering Generative AI and ChatGPT",
     provider: "GeeksforGeeks",
     year: "2025",
-    link: "/GenAI_certificate.pdf",
+    link: process.env.PUBLIC_URL + "/GenAI_certificate.pdf",
   },
   // Add more...
 ];
