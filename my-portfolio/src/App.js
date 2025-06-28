@@ -11,7 +11,7 @@ import Contact from './components/Contact.js';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/my-portfolio">
       <div className="App">
         <Header />
         <Routes>
