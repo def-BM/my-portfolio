@@ -1,3 +1,4 @@
+/* Certificate Section */
 .certifications-container {
   max-width: 900px;
   margin: 50px auto;
@@ -61,4 +62,60 @@
 
 .cert-link:hover {
   text-decoration: underline;
+}
+
+/* Coding Milestone Section */
+.problem-solving-links {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.problem-solving-links li a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #007bff;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.problem-solving-links li a:hover {
+  border-color: #007bff;
+}
+
+@media (max-width: 600px) {
+  .certifications-container {
+    padding: 10px;
+    margin: 20px 10px;
+  }
+
+  .certifications-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .certifications-description {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .cert-card {
+    padding: 15px;
+  }
+
+  .cert-title {
+    font-size: 18px;
+  }
+
+  .cert-provider,
+  .cert-year,
+  .cert-link {
+    font-size: 13px;
+    text-align: center;
+  }
 }

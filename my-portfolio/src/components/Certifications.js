@@ -17,6 +17,17 @@ const certifications = [
   // Add more...
 ];
 
+const problemSolvingLinks = [
+  {
+    platform: "LeetCode",
+    url: "https://leetcode.com/u/def-bm/",
+  },
+  {
+    platform: "HackerRank",
+    url: "https://www.hackerrank.com/profile/brijesh27m",
+  },
+];
+
 const Certifications = () => {
   return (
     <div className="certifications-container">
@@ -36,6 +47,28 @@ const Certifications = () => {
           </div>
         ))}
       </div>
+
+      {/* Second section for problem solving */}
+      <h2 className="certifications-title" style={{ marginTop: "60px" }}>
+        coding Milestones 💻
+      </h2>
+      <p className="certifications-description">
+        Here are my active profiles on coding platforms:
+      </p>
+      <ul className="problem-solving-links">
+        {problemSolvingLinks.map((platform, index) => (
+          <li key={index}>
+            <a
+              href={platform.url}
+              className="cert-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {platform.platform}
+            </a>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

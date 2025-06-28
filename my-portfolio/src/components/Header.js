@@ -1,34 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+// import './Header.css';
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+  const closeMenu = () => setMenuOpen(false);
+
   return (
-    <header
-      style={{
-        padding: '20px',
-        background: '#222',
-        color: '#fff',
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>My Portfolio</h1>
-      <nav>
-        <ul
-          style={{
-            display: 'flex',
-            listStyle: 'none',
-            margin: 0,
-            padding: 0,
-            gap: '20px',
-          }}
-        >
-          <li><Link to="/" className='nav-link'>About</Link></li>
-          <li><Link to="/projects" className='nav-link'>Projects</Link></li>
-          <li><Link to="/certifications" className='nav-link'>Achievements</Link></li>
-          <li><Link to="/resume" className='nav-link'>Résumé</Link></li>
-          <li><Link to="/contact" className='nav-link'>Contact</Link></li>
+    <header className="header">
+      <h1 className="logo">My Portfolio</h1>
+
+      <div className={`nav-toggle ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+        ☰
+      </div>
+
+      <nav className={`nav ${menuOpen ? 'open' : ''}`}>
+        <ul>
+          <li><Link to="/" className="nav-link" onClick={closeMenu}>About</Link></li>
+          <li><Link to="/projects" className="nav-link" onClick={closeMenu}>Projects</Link></li>
+          <li><Link to="/certifications" className="nav-link" onClick={closeMenu}>Achievements</Link></li>
+          <li><Link to="/resume" className="nav-link" onClick={closeMenu}>Résumé</Link></li>
+          <li><Link to="/contact" className="nav-link" onClick={closeMenu}>Contact</Link></li>
         </ul>
       </nav>
     </header>

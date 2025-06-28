@@ -13,12 +13,13 @@ body {
   padding: 60px 20px;
 }
 
-/* About.js Style */
+/* About.js Section */
 .about-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
+  padding: 40px 20px;
 }
 
 .about-left {
@@ -28,8 +29,9 @@ body {
 }
 
 .about-image {
-  width: 500px;
-  height: 500px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -40,25 +42,124 @@ body {
   flex: 2;
   text-align: left;
   max-width: 600px;
+  padding: 0 15px;
 }
 
-/* Responsive: horizontal layout on larger screens */
+/* Layout for medium to large screens */
 @media (min-width: 768px) {
   .about-section {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
   }
+
+  .about-left, .about-right {
+    width: 50%;
+  }
 }
 
-/* Header.js navbar style */
+/* Layout for small screens */
+@media (max-width: 480px) {
+  .about-right {
+    text-align: center;
+  }
+
+  .about-image {
+    max-width: 300px;
+  }
+
+  .section {
+    padding: 40px 10px;
+  }
+}
+
+/* Header navbar links */
 .nav-link {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
+  padding: 10px 15px;
+  display: inline-block;
   transition: color 0.3s ease;
 }
 
 .nav-link:hover {
   color: orange; /* Hover color */
+}
+
+/* Header.js */
+.header {
+  padding: 20px;
+  background: #222;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  margin: 0;
+  font-size: 24px;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: orange;
+}
+
+/* Hamburger icon */
+.nav-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #222;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  .nav.open {
+    max-height: 300px;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    gap: 10px;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
 }
