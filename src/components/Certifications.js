@@ -14,6 +14,18 @@ const certifications = [
     year: "2025",
     link: process.env.PUBLIC_URL + "/GenAI_certificate.pdf",
   },
+  {
+    title: "Oracle Cloud Infrastructure 2025 Certified Generative AI Professional",
+    provider: "Oracle",
+    year: "2025",
+    link: process.env.PUBLIC_URL + "/Oracle_GenAI.pdf",
+  },
+  {
+    title: "Oracle Cloud Infrastructure 2025 Certified Data Science Professional",
+    provider: "Oracle",
+    year: "2025",
+    link: process.env.PUBLIC_URL + "/Oracle_DS.pdf",
+  },
   // Add more...
 ];
 

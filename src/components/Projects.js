@@ -42,6 +42,12 @@ const projectsData = [
                   an interactive and visual dashboard was created to help businesses gain insights into customer behavior and purchasing patterns.`,
     link: 'https://github.com/def-BM/Customer_Segmentation_Power_BI.git',
   },
+  {
+    image: process.env.PUBLIC_URL + "/img6.png",
+    title: 'Vehicle Overspeed Detection System using GSP neo-6m',
+    description: `This project detects vehicle overspeeding using an ESP32 and NEO-6M GPS module by continuously monitoring speed in real time. When the speed limit is crossed, a buzzer, LED, and mobile notification alert the user through the Blynk IoT app.`,
+    link: 'https://github.com/def-BM/overspeed_detection.git',
+  },
   // Add more projects here
 ];
 
