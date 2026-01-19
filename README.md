@@ -85,9 +85,11 @@ Add email contact form
 
 Add blog / achievements section
 
-👤 Author
+```
+
+## 👤 Author
 Brijesh Maurya
-📍 React Developer | ML Enthusiast
+ML Enthusiast
 
 🔗 Portfolio — https://def-bm.github.io/my-portfolio/
 📧 Email — brijesh27m@gmail.com
